@@ -1,9 +1,6 @@
-int randomNumber = (int)(Math.random() * 10);
-
 void setup(){
  size(500,500); 
 noLoop();
-System.out.println(randomNumber);
 }
 
 void draw(){
@@ -18,7 +15,7 @@ void draw(){
 
 void scale(int x, int y){
   
- if (randomNumber < 5){
+ if (Math.random() < 0.5){
  fill(30,144,255);
  ellipse(x,y,47,47);
  fill(0,191,255);
